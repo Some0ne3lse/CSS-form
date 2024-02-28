@@ -15,39 +15,53 @@
       <p>Contact NTV</p>
     </div>
     <div class="w-2/3 h-full flex-col justify-center items-center">
-      <div class="pl-6 pt-10">
+      <div class="px-6 pt-10 pb-5 h-full">
         <h1 class="font-bold">Email Us</h1>
-        <div class="pt-5">
-          <form>
-            <div class="flex flex-col">
-              <div class="flex">
-                <div class="flex-col">
-                  <label class="font-light" for="name">Name</label>
-                  <input class="border-red-500 border-2 h-9" type="text" name="name" id="name" required />
-                </div>
-                <div class="flex-col">
-                  <label class="font-light" for="company">Company</label>
-                  <input class="border-red-500 border-2 h-9" type="text" name="name" id="name" required />
-                </div>
-              </div>
+        <div class="py-5 flex">
+          <form class="grid grid-cols-2 grid-rows-4 gap-4 w-full">
+
+
+            <div class="flex-col grid col-start-1 col-end-1">
+              <label class="font-light" for="name">Name</label>
+              <input class="border-red-500 border-2 h-9" type="text" name="name" id="name" required />
             </div>
-            <div class="flex flex-col">
-              <div class="flex">
-                <div class="flex-col">
-                  <label class="font-light" for="email">Email Address</label>
-                  <input class="border-red-500 border-2 h-9" type="text" name="name" id="name" required />
-                </div>
-                <div class="font-light" class="flex-col">
-                  <label for="phone">Phone Number</label>
-                  <input class="border-red-500 border-2 h-9" type="text" name="name" id="name" required />
-                </div>
+
+            <div class="flex-col grid col-start-2 col-end-2">
+              <label class="font-light" for="company">Company</label>
+              <input class="border-red-500 border-2 h-9" type="text" name="name" id="name" required />
+            </div>
+
+
+
+            <div class="flex-col grid">
+              <label class="font-light" for="email">Email Address</label>
+              <input class="border-red-500 border-2 h-9" type="text" name="name" id="name" required />
+            </div>
+
+
+            <div class="flex-col grid">
+              <label class="font-light" for="phone">Phone Number</label>
+              <input class="border-red-500 border-2 h-9" type="text" name="name" id="name" required />
+            </div>
+
+            <div class="col-span-2 row-span-2">
+              <div class="flex flex-col h-full">
+                <label for="message">
+                  Message
+                </label>
+                <textarea class="border-red-500 border-2 h-full" id=" message" name="message">
+
+                </textarea>
               </div>
             </div>
           </form>
         </div>
+        <button class="flex justify-center items-center w-full bg-red-500 h-10 text-white">
+          Submit
+        </button>
       </div>
     </div>
-
+  </div>
 </body>
 
 </html>
